@@ -8,7 +8,7 @@ The result can then be saved to a new Excel spreadsheet.
 The intervals must be closed and integers, for example [2,10]. 
 The table may only be described in columns A and B. 
 The first interval must be in the first line and no text. 
-One interval per line. A < B applies.
+One interval per line. cell A < B applies in one row.
 Only Excel files with the extension .xlsx can be loaded.
 
 # modules discription
