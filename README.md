@@ -32,7 +32,7 @@ Only Excel files with the extension .xlsx can be loaded.
 Das Programm kombiniert überlappende Intervalle. Der Benutzer kann eine Excel-Tabelle mit Intervallen über eine einfache Benutzeroberfläche laden. Anschließend verbindet das Programm alle Intervalle aus der Excel-Tabelle, die sich überschneiden. Das Ergebnis kann dann in einer neuen Excel-Tabelle gespeichert werden.
 
 ## Beschränkung
-Die Intervalle müssen geschlossen und ganzzahlig sein, zum Beispiel [2,10]. Die Tabelle darf nur in den Spalten A und B beschrieben werden. Das erste Intervall darf in der ersten Zeile und ohne Text stehen. Ein Intervall pro Zeile. Zelle A <B gilt in einer Zeile. Es können nur Excel-Dateien mit der Erweiterung .xlsx geladen werden.
+Die Intervalle müssen geschlossen und ganzzahlig sein, zum Beispiel [2,10]. Die Tabelle darf nur in den Spalten A und B beschrieben werden. In der ersten Zeile darf kein Text stehen. Ein Intervall pro Zeile. Es gilt Zelle A? < B? in einer Zeile. Es können nur Excel-Dateien mit der Endung .xlsx geladen werden.
 
 # Modulbeschreibung
 ### main.py
