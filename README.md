@@ -27,3 +27,29 @@ Only Excel files with the extension .xlsx can be loaded.
 ### saveexcelfile.py
 * gets the new matrix
 * opens a dialog box to save the new matrix as a .xlsx-file
+
+# Intervalle verbinden
+Das Programm kombiniert überlappende Intervalle. Der Benutzer kann eine Excel-Tabelle mit Intervallen über eine einfache Benutzeroberfläche laden. Anschließend verbindet das Programm alle Intervalle aus der Excel-Tabelle, die sich überschneiden. Das Ergebnis kann dann in einer neuen Excel-Tabelle gespeichert werden.
+
+## Beschränkung
+Die Intervalle müssen geschlossen und ganzzahlig sein, zum Beispiel [2,10]. Die Tabelle darf nur in den Spalten A und B beschrieben werden. Das erste Intervall darf in der ersten Zeile und ohne Text stehen. Ein Intervall pro Zeile. Zelle A <B gilt in einer Zeile. Es können nur Excel-Dateien mit der Erweiterung .xlsx geladen werden.
+
+# Modulbeschreibung
+### main.py
+* enthält den GUI-Teil
+* ruft alle anderen Module auf
+
+### loadexcelfile.py
+* öffnet ein Dialogfeld zur Auswahl der XLSX-Datei
+* schließt Dateien aus, die die Anforderungen nicht erfüllen
+* gibt eine Matrix mit den Werten aus der Tabelle zurück
+
+### calculate.py
+* das Intervall mit dem kleinsten Wert in Spalte A wird in jedem Schleifendurchgang fokussiert
+* es wird nach Intervallen gesucht, die sich mit dem fokussierten Intervall überschneiden
+* das fokussierte Intervall und die gefundenen Intervalle werden aus der Matrix gelöscht und als verbundenes Intervall in eine neue Matrix geschrieben
+* die neue Matrix wird zurückgegeben
+
+### saveexcelfile.py
+* übernimmt die neue Matrix
+* öffnet ein Dialogfeld zum Speichern der neuen Matrix als XLSX-Datei
