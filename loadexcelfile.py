@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 from tkinter import filedialog
 import numpy as np
 
-'''functions / Funktionen'''
+'''function / Funktion'''
 def loadfile():
     # opens dialog box to choose the excel-file
     # öffnet das Dialogfeld zur Auswahl der Excel-Datei
